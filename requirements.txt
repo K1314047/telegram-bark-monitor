@@ -1,0 +1,5 @@
+telethon==1.45.0
+aiohttp
+python-dotenv
+PySocks
+python-socks

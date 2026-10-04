@@ -1,0 +1,11 @@
+services:
+  telegram-bark:
+    build: .
+    container_name: telegram-bark-monitor
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
+    stdin_open: true
+    tty: true
